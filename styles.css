@@ -1,44 +1,63 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+.custum-container {
+    max-width: 1230px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* border-left:  1px solid #D6DDE4;
+    border-right: 1px solid #D6DDE4 ; */
+    border-radius: 10px;
+}
+
+section {
     background: #E7EDF4;
 }
 
-header{
+body {
+    background: #D6DDE4;
+    height: 100vh;
+}
+
+header {
     border-radius: 0px 0px 10px 10px;
+    background: #E7EDF4;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 30px;
-    max-width: 1298px;
-    width: 100%;
+    padding: 24px 0px 24px 0px;
+
 }
 
-header .navbar{
+.navbar {
     display: inline-flex;
     align-items: center;
     gap: 22px;
     justify-content: right;
     margin-right: 35px;
-    flex:1;
+    flex: 1;
 }
 
-header .navbar .nav-link{
+.navbar .nav-link {
     color: #020F20;
-    font-family: Parsi;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; 
+    line-height: 100%;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-header .langselection{
+.langselection {
     display: inline-flex;
     padding: 10px;
     justify-content: center;
@@ -50,32 +69,36 @@ header .langselection{
 
 }
 
-header .langselection p{
+.langselection p {
     color: #020F20;
-    font-family: Parsi;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 12px */
+    line-height: 100%;
+    /* 12px */
 }
 
-.hero{
+button{
+   cursor: pointer;
+}
+
+.hero {
     display: flex;
 }
 
 
-.hero .heroparent{
+.hero .heroparent {
     display: inline-flex;
-    padding: 84px 50px 107px 50px;
     flex-direction: column;
     align-items: flex-start;
     gap: 23px;
     border-radius: 10px;
-    max-width: 752px;
+    max-width: 652px;
     width: 100%;
 }
 
-.hero .heroparent .herochild{
+.hero .heroparent .herochild {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -83,47 +106,48 @@ header .langselection p{
     width: 100%;
 }
 
-.hero .heroparent .herochild .herograndchild{
+.hero .heroparent .herochild .herograndchild {
     display: flex;
     align-items: center;
     gap: 15px;
     width: 100%;
 }
 
-.hero .heroparent .heroh1{
-    color:  #020F20;;
-    font-family: Parsi;
-    font-size: 58px;
+.hero .heroparent .heroh1 {
+    color: #020F20;
+    ;
+    font-family: "Roboto", sans-serif;
+    font-size: 65px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 58px */
+    line-height: 100%;
+    /* 58px */
     text-transform: uppercase;
-    max-width: 642px;
     width: 100%;
 }
 
-.hero .heroparent .heroh1 span{
+.hero .heroparent .heroh1 span {
     color: #2C83F6;
 }
 
-.herop{
+.herop {
     color: #020F20;
     font-family: "Noto Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; 
+    line-height: 140%;
     max-width: 612px;
     width: 100%;
 }
 
-.hero .heroparent .herobttns{
+.hero .heroparent .herobttns {
     display: flex;
     align-items: center;
     gap: 13px;
 }
 
-.hero .heroparent .herobttns .button1{
+.hero .heroparent .herobttns .button1 {
     display: flex;
     padding: 17px 20px 17px 25px;
     justify-content: center;
@@ -136,12 +160,13 @@ header .langselection p{
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%;
+    /* 16.8px */
     text-transform: uppercase;
     border: none;
 }
 
-.hero .heroparent .herobttns .button2{
+.hero .heroparent .herobttns .button2 {
     display: flex;
     padding: 17px 20px 17px 25px;
     justify-content: center;
@@ -154,20 +179,341 @@ header .langselection p{
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%;
+    /* 16.8px */
     text-transform: uppercase;
     border: none;
 }
 
-.hero .heroimg{
-    display: flex;
-    padding: 70px 0px 71px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero .heroimg {
     flex-shrink: 0;
     border-radius: 10px;
     background: #E7EDF4;
+    border-radius: 10px;
+    border: 2px solid #D6DDE4;
+}
+
+.herograndparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
 }
 
 
+.collaboratorprnt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+    padding: 80px 100px 96px 100px;
+    border-top: 1px solid #D6DDE4;
+    border-bottom: 1px solid #D6DDE4;
+    width: 100%;
+}
+
+.collaboratorheading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.olympusp {
+    color: #2C83F6;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 12px */
+    text-transform: uppercase;
+}
+
+.collaboratosh2 {
+    color: #020F20;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 42px */
+
+}
+
+.collaboratorsicon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px 20px;
+}
+
+.collaboratorimg {
+    width: 100%;
+}
+
+.features {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 104px;
+    width: 100%;
+    padding: 80px 100px 88px 100px;
+}
+
+.features .featuresheading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    max-width: 652px;
+}
+
+.featuresheading .featuresh2 {
+    color: #020F20;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 42px */
+}
+
+.featuresheading .featuresp {
+    color: #424C58;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    width: 100%;
+    max-width: 600px;
+}
+
+.features .featurecards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.featurecards .featurecard { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    width: 100%;
+}
+
+.featurecard .cardh3 {
+    color: #020F20;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold 500;
+    line-height: 100%;
+    border-bottom: 1px solid #CFD4DB;
+    padding-bottom: 22px;
+    width: 100%;
+}
+
+.featurecard .cardp {
+    color: #424C58;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.products {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #542CF6;
+    width: 100%;
+    gap: 173px;
+    position: sticky;
+    top: 20px;
+}
+
+.productdesc{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 60%;
+    flex: 1;   
+}
+
+.productdesc .initialp{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 12px */
+    text-transform: uppercase;    
+}
+
+.productdesc .producth3{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 42px */  
+}
+
+.productdesc .productp {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.productp .productspan {
+    display: block;
+    padding-top: 25px;
+}
+
+.productdesc .productbttn {
+    display: flex;
+    padding: 20px 33px 20px 38px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 5px;
+    background: rgba(2, 15, 32, 0.10);
+    border: none;
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+}
+
+.products .productimg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 40%;
+    flex: 1;
+}
+
+.usecases{
+    display: flex;
+    padding: 70px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+    background: #FFF;
+}
+
+.overflow{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 20px 0 100px;
+
+}
+
+.overflow::-webkit-scrollbar {
+  display: none;/* Chrome, Saf ari, Opera */
+}
+
+.usecasesheading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    max-width: 723px;
+    width: 100%;
+    padding: 0 100px;
+}
+
+ .usecasesh2{
+    color: #020F20;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 42px */
+}
+
+ .usecasescardsprnt{
+
+}
+
+.usecasescards{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: max-content;
+}
+
+.usecasecard{
+    display: flex;
+    padding: 20px 20px 25px 20px;
+    width: 267px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 10px;
+    border: 1px solid #E0E4E9;
+    background: #FFF;
+    flex-shrink: 0;
+}
+
+.usecasecard:hover{
+    border-radius: 10px;
+    border: 1.2px solid #2C83F6;
+    background: #FFF;
+    box-shadow: 0px 10px 10px 0px rgba(44, 131, 246, 0.10), 0px 10px 10px 0px rgba(44, 131, 246, 0.10);
+}
+
+ .usecasescardh3{
+    color: #020F20;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+}
+
+.usecasescardp{
+    color: #424C58;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.card1{
+    top: 100px !important;
+}
+
+.card2 {
+     top: 180px;
+}
+
+.card3 {
+    top: 260px;
+}
+
+.card4 {
+    top: 340px;
+}
