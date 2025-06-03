@@ -2,6 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+p {
+    margin-bottom: 0 !important;
 }
 
 .custum-container {
@@ -16,17 +21,17 @@
 }
 
 section {
-    background: #E7EDF4;
+    background: #e7edf4;
 }
 
 body {
-    background: #D6DDE4;
+    background: #d6dde4;
     height: 100vh;
 }
 
 header {
     border-radius: 0px 0px 10px 10px;
-    background: #E7EDF4;
+    background: #e7edf4;
 }
 
 .header {
@@ -34,10 +39,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 24px 0px 24px 0px;
-
 }
 
-.navbar {
+.nav-bar {
     display: inline-flex;
     align-items: center;
     gap: 22px;
@@ -46,8 +50,8 @@ header {
     flex: 1;
 }
 
-.navbar .nav-link {
-    color: #020F20;
+.nav-bar .nav-link {
+    color: #020f20;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -57,20 +61,46 @@ header {
     text-decoration: none;
 }
 
-.langselection {
+.nav-bar:hover{
+    color:#2C83F6;
+}
+
+
+header .btn-secondary {
     display: inline-flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 6px;
     border-radius: 5px;
-    border: 1px solid #C2D8F4;
-    background: #E7EDF4;
-
+    border: 1px solid #c2d8f4;
+    background: #e7edf4;
+    color: #020f20;
 }
 
-.langselection p {
-    color: #020F20;
+header .btn-secondary:hover{
+    background: #e7edf4;
+    border-color: #c2d8f4;
+}
+
+header .dropdown .btn-secondary:active{
+    background: #e7edf4;
+    border-color: #c2d8f4;
+}
+
+header .dropdown .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: #020f20;
+    background-color: #e7edf4;
+    border-color: #c2d8f4;
+}
+
+header .dropdown .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #e7edf4; 
+    border-color: #c2d8f4;
+}
+
+header .dropdown .btn{
+    color: #020f20;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -79,14 +109,18 @@ header {
     /* 12px */
 }
 
-button{
-   cursor: pointer;
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
 }
 
 .hero {
     display: flex;
 }
-
 
 .hero .heroparent {
     display: inline-flex;
@@ -114,8 +148,7 @@ button{
 }
 
 .hero .heroparent .heroh1 {
-    color: #020F20;
-    ;
+    color: #020f20;
     font-family: "Roboto", sans-serif;
     font-size: 65px;
     font-style: normal;
@@ -127,11 +160,11 @@ button{
 }
 
 .hero .heroparent .heroh1 span {
-    color: #2C83F6;
+    color: #2c83f6;
 }
 
 .herop {
-    color: #020F20;
+    color: #020f20;
     font-family: "Noto Sans";
     font-size: 16px;
     font-style: normal;
@@ -154,8 +187,8 @@ button{
     align-items: center;
     gap: 12px;
     border-radius: 5px;
-    background: #2C83F6;
-    color: #EFF2F6;
+    background: #2c83f6;
+    color: #eff2f6;
     font-family: "Noto Sans";
     font-size: 14px;
     font-style: normal;
@@ -164,6 +197,12 @@ button{
     /* 16.8px */
     text-transform: uppercase;
     border: none;
+    transition: all 0.3s ease;
+}
+
+.hero .heroparent .herobttns .button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(44, 131, 246, 0.3);
 }
 
 .hero .heroparent .herobttns .button2 {
@@ -173,8 +212,8 @@ button{
     align-items: center;
     gap: 12px;
     border-radius: 5px;
-    background: #FFF;
-    color: #2C83F6;
+    background: #fff;
+    color: #2c83f6;
     font-family: "Noto Sans";
     font-size: 14px;
     font-style: normal;
@@ -183,14 +222,19 @@ button{
     /* 16.8px */
     text-transform: uppercase;
     border: none;
+    transition: all 0.3s ease;
+}
+
+.hero .heroparent .herobttns .button2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero .heroimg {
     flex-shrink: 0;
     border-radius: 10px;
-    background: #E7EDF4;
+    background: #e7edf4;
     border-radius: 10px;
-    border: 2px solid #D6DDE4;
 }
 
 .herograndparent {
@@ -200,15 +244,14 @@ button{
     padding: 70px 0;
 }
 
-
 .collaboratorprnt {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 54px;
     padding: 80px 100px 96px 100px;
-    border-top: 1px solid #D6DDE4;
-    border-bottom: 1px solid #D6DDE4;
+    border-top: 1px solid #d6dde4;
+    border-bottom: 1px solid #d6dde4;
     width: 100%;
 }
 
@@ -221,7 +264,7 @@ button{
 }
 
 .olympusp {
-    color: #2C83F6;
+    color: #2c83f6;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -232,7 +275,7 @@ button{
 }
 
 .collaboratosh2 {
-    color: #020F20;
+    color: #020f20;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 40px;
@@ -240,7 +283,6 @@ button{
     font-weight: 700;
     line-height: 100%;
     /* 42px */
-
 }
 
 .collaboratorsicon {
@@ -271,23 +313,25 @@ button{
 }
 
 .featuresheading .featuresh2 {
-    color: #020F20;
+    color: #020f20;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 42px */
+    line-height: 100%;
+    /* 42px */
 }
 
 .featuresheading .featuresp {
-    color: #424C58;
+    color: #424c58;
     text-align: center;
     font-family: "Noto Sans";
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
     width: 100%;
     max-width: 600px;
 }
@@ -301,7 +345,7 @@ button{
     width: 100%;
 }
 
-.featurecards .featurecard { 
+.featurecards .featurecard {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -310,24 +354,25 @@ button{
 }
 
 .featurecard .cardh3 {
-    color: #020F20;
+    color: #020f20;
     font-family: "Noto Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: bold 500;
     line-height: 100%;
-    border-bottom: 1px solid #CFD4DB;
+    border-bottom: 1px solid #cfd4db;
     padding-bottom: 22px;
     width: 100%;
 }
 
 .featurecard .cardp {
-    color: #424C58;
+    color: #424c58;
     font-family: "Noto Sans";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
 }
 
 .products {
@@ -336,49 +381,50 @@ button{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background: #542CF6;
+    background: #542cf6;
     width: 100%;
-    gap: 173px;
     position: sticky;
     top: 20px;
+    gap: 80px;
 }
 
-.productdesc{
+.productdesc {
     display: flex;
-    width: 60%;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    max-width: 60%;
-    flex: 1;   
+
 }
 
-.productdesc .initialp{
-    color: #FFF;
+.productdesc .initialp {
+    color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 12px */
-    text-transform: uppercase;    
+    line-height: 100%;
+    /* 12px */
+    text-transform: uppercase;
 }
 
-.productdesc .producth3{
-    color: #FFF;
+.productdesc .producth3 {
+    color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 42px */  
+    line-height: 100%;
+    /* 42px */
 }
 
 .productdesc .productp {
-    color: #FFF;
+    color: #fff;
     font-family: "Noto Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
 }
 
 .productp .productspan {
@@ -394,47 +440,53 @@ button{
     align-items: center;
     gap: 12px;
     border-radius: 5px;
-    background: rgba(2, 15, 32, 0.10);
+    background: rgba(2, 15, 32, 0.1);
     border: none;
-    color: #FFF;
+    color: #fff;
     font-family: "Noto Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%;
+    /* 16.8px */
     text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.productdesc .productbttn:hover {
+    transform: translateY(-3px);
+    background: rgba(2, 15, 32, 0.2);
 }
 
 .products .productimg {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 40%;
-    flex: 1;
 }
 
-.usecases{
+.usecases {
     display: flex;
     padding: 70px 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 55px;
-    background: #FFF;
+    background: #fff;
+    border-radius: 10px;
 }
 
-.overflow{
+.overflow {
     display: flex;
     width: 100%;
     overflow-x: auto;
     padding: 0 20px 0 100px;
-
 }
 
 .overflow::-webkit-scrollbar {
-  display: none;/* Chrome, Saf ari, Opera */
+    display: none;
+    /* Chrome, Saf ari, Opera */
 }
 
-.usecasesheading{
+.usecasesheading {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -444,27 +496,24 @@ button{
     padding: 0 100px;
 }
 
- .usecasesh2{
-    color: #020F20;
+.usecasesh2 {
+    color: #020f20;
     font-family: "Roboto", sans-serif;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; /* 42px */
+    line-height: 100%;
+    /* 42px */
 }
 
- .usecasescardsprnt{
-
-}
-
-.usecasescards{
+.usecasescards {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     width: max-content;
 }
 
-.usecasecard{
+.usecasecard {
     display: flex;
     padding: 20px 20px 25px 20px;
     width: 267px;
@@ -472,42 +521,45 @@ button{
     align-items: flex-start;
     gap: 30px;
     border-radius: 10px;
-    border: 1px solid #E0E4E9;
-    background: #FFF;
+    border: 1px solid #e0e4e9;
+    background: #fff;
     flex-shrink: 0;
 }
 
-.usecasecard:hover{
+.usecasecard:hover {
     border-radius: 10px;
-    border: 1.2px solid #2C83F6;
-    background: #FFF;
-    box-shadow: 0px 10px 10px 0px rgba(44, 131, 246, 0.10), 0px 10px 10px 0px rgba(44, 131, 246, 0.10);
+    border: 1.2px solid #2c83f6;
+    background: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(44, 131, 246, 0.1),
+        0px 10px 10px 0px rgba(44, 131, 246, 0.1);
 }
 
- .usecasescardh3{
-    color: #020F20;
+.usecasescardh3 {
+    color: #020f20;
     font-family: "Noto Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 100%; /* 18px */
+    line-height: 100%;
+    /* 18px */
 }
 
-.usecasescardp{
-    color: #424C58;
+.usecasescardp {
+    color: #424c58;
     font-family: "Noto Sans";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
 }
 
-.card1{
+.card1 {
     top: 100px !important;
 }
 
 .card2 {
-     top: 180px;
+    top: 180px;
 }
 
 .card3 {
@@ -516,4 +568,361 @@ button{
 
 .card4 {
     top: 340px;
+}
+
+.coin {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFF;
+    width: 100%;
+    gap: 173px;
+}
+
+.coinheading {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 60%;
+    flex: 1;
+
+}
+
+.coinheading .coinh3 {
+    color: #020f20;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.coinp {
+    color: #424c58;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.coinspan {
+    display: block;
+    padding-top: 25px;
+}
+
+.coinbttn {
+    display: flex;
+    padding: 20px 33px 20px 38px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 5px;
+    background: #EBF4FF;
+    border: none;
+    color: #2C83F6;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 16.8px */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.coinbttn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(44, 131, 246, 0.2);
+}
+
+.parentmycustomaccordionforstyling .accordion-button {
+    background-color: red;
+}
+
+.faqsmain {
+    display: flex;
+    padding: 50px 100px;
+    border-radius: 10px;
+    background: #e7edf4;
+    width: 100%;
+    gap: 50px;
+    border: 1px solid #F4F7F9;
+
+}
+
+.faqsmain .faqsheading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 445px;
+}
+
+.faqsheading .faqsh3 {
+    color: #020f20;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.faqsheading .faqsheadingp {
+    color: #424c58;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.faqsmain .accordion {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.faqsmain .accordion .accordion-button {
+    padding: 18px;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.faqsmain .accordion .faqsheadingp {
+    color: #424c58;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.faqsmain .accordion .accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url('./assets/Add_Plus.png');
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.faqsmain .accordion .accordion-button:not(.collapsed)::after {
+    background-image: url('./assets/Remove_Minus.png');
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.faqsmain .accordion .accordion-body {
+    background-color: #F4F7F9;
+}
+
+.faqsmain .accordion .accordion-button:not(.collapsed) {
+    background-color: white;
+
+}
+
+.faqsmain .accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-radius: 10px;
+}
+
+.faqsmain .accordion .accordion-item:first-of-type {
+    border-radius: 10px;
+}
+
+.faqsmain .accordion .accordion-item:not(:first-of-type) {
+    border-radius: 10px
+}
+
+.faqsmain .accordion .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.lastsection {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    border-radius: 10px;
+    width: 100%;
+    gap: 30px;
+    background: url('./assets/Frame\ 15.png');
+    background-position: right;
+    border: 1px solid #cfd4db;
+}
+
+.lastsectionheading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.lastsectionh2 {
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.lastsectionp {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.lastsectionbttn {
+    display: flex;
+    padding: 20px 33px 20px 38px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 5px;
+    background: #EBF4FF;
+    border: none;
+    color: #2C83F6;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.lastsectionbttn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background: #E7EDF4;
+}
+
+.footer {
+    display: flex;
+    padding: 50px 20px;
+    border-radius: 10px;
+    background: #E7EDF4;
+    justify-content: space-between;
+}
+
+.footer .footerheading {
+    display: flex;
+    flex-direction: column;
+    gap: 87.4px;
+
+}
+
+.footerp {
+    color: #020F2080;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.footerp2 {
+    color: #020F2080;
+    font-family: "Noto Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    word-spacing: 10px;
+    padding-top: 10px;
+}
+
+.footerlist {
+    list-style-type: none;
+}
+
+.footerlist li h5 {
+    color: #020f20;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 bold;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footerlist li a {
+    text-decoration: none;
+    color: #020F2080;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-top: 11px;
+}
+
+.footerlist li a:hover {
+    color: #2C83F6;
+    cursor: pointer;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.red {
+    background-color: #C2275F;
+}
+
+.green {
+    background-color: #64B6AC;
+}
+
+.purple {
+    background-color: #6764B6;
+}
+
+.orange {
+    background-color: #E88336;
+}
+
+@media(max-width: 991px){
+    .nav-bar{
+        display: none;
+    }
+}
+
+
+p{
+    text-align: center;
+}
+
+.maria{
+    
 }

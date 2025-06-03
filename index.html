@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
 </head>
 
@@ -25,8 +27,11 @@
     <header>
 
         <div class="custum-container">
+
             <div class="header">
+
                 <div class="olympusicon">
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="156" height="23" viewBox="0 0 156 23" fill="none">
                         <path
                             d="M13.4066 6.27434C13.4245 6.25755 13.4421 6.24044 13.4595 6.22302L17.9082 1.77433L20.2389 4.10503L15.7902 8.55371C13.5447 10.7992 9.90409 10.7992 7.65862 8.55371L3.20994 4.10502L5.54064 1.77433L9.98932 6.22302C10.0287 6.26244 10.0692 6.30025 10.1105 6.33643V0H13.4066V6.27434Z"
@@ -61,23 +66,25 @@
                             fill="black" />
                         <path d="M155.227 6.42395V17.2723H153.765V6.42395H155.227Z" fill="black" />
                     </svg>
+
                 </div>
 
-                <nav class="navbar">
+                <nav class="nav-bar">
 
-                    <a href="#" class="nav-link">HOME</a>
-                    <a href="#" class="nav-link">ABOUT</a>
-                    <a href="#" class="nav-link">FEATURES</a>
-                    <a href="#" class="nav-link">PRODUCTS</a>
-                    <a href="#" class="nav-link">USE CASES</a>
-                    <a href="#" class="nav-link">OAI COIN</a>
-                    <a href="#" class="nav-link">FAQS</a>
+                    <a href="#home" class="nav-link">HOME</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#features" class="nav-link">FEATURES</a>
+                    <a href="#products" class="nav-link">PRODUCTS</a>
+                    <a href="#usecases" class="nav-link">USE CASES</a>
+                    <a href="#coin" class="nav-link">OAI COIN</a>
+                    <a href="#faqs" class="nav-link">FAQS</a>
 
                 </nav>
 
-                <div class="langselection">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path
                             d="M0.790127 10.865H19.21V10.8653H0.790127V10.865ZM1.74957 5.81511H18.2503V5.8154H1.74957V5.81511ZM1.09339 7.49837H18.9066V7.49866H1.09339V7.49837ZM4.72474 17.5987H15.2754L15.276 17.5981H4.72416L4.72474 17.5987ZM9.99992 0.748535C9.8182 0.748535 9.63793 0.755109 9.45899 0.765334H10.541C10.3608 0.754587 10.1804 0.748985 9.99992 0.748535ZM0.786621 9.18163H19.2137V9.18192H0.786621V9.18163Z"
                             fill="#C42126" />
@@ -148,13 +155,16 @@
                             d="M2.59962 5.99023L2.74059 6.42423H3.19723L2.8278 6.69258L2.96891 7.12687L2.59962 6.85838L2.23048 7.12687L2.3713 6.69258L2.00202 6.42423H2.45866L2.59962 5.99023ZM2.59962 7.52347L2.74059 7.95776H3.19723L2.8278 8.22611L2.96891 8.6604L2.59962 8.39191L2.23048 8.6604L2.3713 8.22611L2.00202 7.95776H2.45866L2.59962 7.52347ZM4.13315 3.6898L4.27412 4.12394H4.73061L4.36133 4.39243L4.50229 4.82643L4.13315 4.55823L3.76387 4.82643L3.90483 4.39243L3.5354 4.12394H3.99204L4.13315 3.6898ZM4.13315 5.22332L4.27412 5.65747H4.73061L4.36133 5.92567L4.50229 6.35996L4.13315 6.09176L3.76387 6.35996L3.90483 5.92567L3.5354 5.65747H3.99204L4.13315 5.22332ZM4.13315 6.75685L4.27412 7.19114H4.73061L4.36133 7.4592L4.50229 7.89349L4.13315 7.625L3.76387 7.89349L3.90483 7.4592L3.5354 7.19114H3.99204L4.13315 6.75685ZM1.43538 7.89349L1.29427 7.4592L1.66356 7.191H1.20721L1.19698 7.1593C1.14694 7.31485 1.1012 7.47174 1.05981 7.62982L1.06624 7.625L1.43538 7.89349ZM2.23048 5.59334L2.59962 5.32485L2.96891 5.59334L2.8278 5.15905L3.19708 4.89056H2.74044L2.59948 4.45656L2.45851 4.89056H2.29023C2.25897 4.93789 2.22873 4.98551 2.19835 5.03357L2.3713 5.15905L2.23048 5.59334ZM4.13315 3.0247L4.50229 3.2929L4.36133 2.8589L4.73047 2.59041H4.4668C4.24296 2.75765 4.02688 2.93503 3.81923 3.12199L3.76358 3.2929L4.13315 3.0247ZM5.2974 2.52628L5.66668 2.25779L6.03582 2.52628L5.89486 2.09199L6.264 1.82379H5.8075L5.78836 1.76536C5.63358 1.84393 5.48106 1.92688 5.33099 2.01413L5.43822 2.09199L5.2974 2.52628ZM5.66668 2.92318L5.80765 3.35703H6.26414L5.89486 3.62552L6.03582 4.05981L5.66668 3.79132L5.2974 4.05981L5.43836 3.62552L5.06893 3.35703H5.52557L5.66668 2.92318ZM5.66668 4.45671L5.80765 4.89056H6.26414L5.89486 5.15905L6.03582 5.59334L5.66668 5.32485L5.2974 5.59334L5.43836 5.15905L5.06893 4.89056H5.52557L5.66668 4.45671ZM5.66668 5.99023L5.80765 6.42423H6.26414L5.89486 6.69258L6.03582 7.12687L5.66668 6.85838L5.2974 7.12687L5.43836 6.69258L5.06893 6.42423H5.52557L5.66668 5.99023ZM5.66668 7.52347L5.80765 7.95776H6.26414L5.89486 8.22611L6.03582 8.6604L5.66668 8.39191L5.2974 8.6604L5.43836 8.22611L5.06893 7.95776H5.52557L5.66668 7.52347ZM7.20021 2.15627L7.34118 2.59041H7.79767L7.42853 2.8589L7.56935 3.2929L7.20021 3.0247L6.83078 3.2929L6.97189 2.8589L6.60246 2.59041H7.0591L7.20021 2.15627ZM7.20021 3.6898L7.34118 4.12394H7.79767L7.42853 4.39243L7.56935 4.82643L7.20021 4.55823L6.83078 4.82643L6.97189 4.39243L6.60246 4.12394H7.0591L7.20021 3.6898ZM7.20021 5.22332L7.34118 5.65747H7.79767L7.42853 5.92567L7.56935 6.35996L7.20021 6.09176L6.83078 6.35996L6.97189 5.92567L6.60246 5.65747H7.0591L7.20021 5.22332ZM7.20021 6.75685L7.34118 7.19114H7.79767L7.42853 7.4592L7.56935 7.89349L7.20021 7.625L6.83078 7.89349L6.97189 7.4592L6.60246 7.19114H7.0591L7.20021 6.75685ZM8.73374 1.38965L8.8747 1.82379H9.3312L8.96191 2.09199L9.10288 2.52628L8.73374 2.25779L8.36431 2.52628L8.50542 2.09199L8.13599 1.82379H8.59248L8.73374 1.38965ZM8.73374 2.92318L8.8747 3.35703H9.3312L8.96191 3.62552L9.10288 4.05981L8.73374 3.79132L8.36431 4.05981L8.50542 3.62552L8.13599 3.35703H8.59248L8.73374 2.92318ZM8.73374 4.45671L8.8747 4.89056H9.3312L8.96191 5.15905L9.10288 5.59334L8.73374 5.32485L8.36431 5.59334L8.50542 5.15905L8.13599 4.89056H8.59248L8.73374 4.45671ZM8.73374 5.99023L8.8747 6.42423H9.3312L8.96191 6.69258L9.10288 7.12687L8.73374 6.85838L8.36431 7.12687L8.50542 6.69258L8.13599 6.42423H8.59248L8.73374 5.99023ZM8.73374 7.52347L8.8747 7.95776H9.3312L8.96191 8.22611L9.10288 8.6604L8.73374 8.39191L8.36431 8.6604L8.50542 8.22611L8.13599 7.95776H8.59248L8.73374 7.52347Z"
                             fill="#EFEFEF" />
                     </svg>
-                    <p>English</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M12.5002 9.16675L10.0002 11.6667L7.50024 9.16675" stroke="#2C83F6" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    </ul>
                 </div>
+
+
+                
             </div>
         </div>
 
@@ -164,7 +174,7 @@
 
     <main>
 
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="custum-container">
                 <div class="herograndparent">
                     <div class="heroparent">
@@ -271,7 +281,7 @@
 
         </section>
 
-        <section class="collaborators">
+        <section id="about" class="collaborators">
 
             <div class="custum-container">
 
@@ -290,25 +300,25 @@
                             <img class="nvidiaicon" src="assets/Frame 12.png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 16.png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 17 (1).png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 18.png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 12 (1).png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 16 (2).png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 19.png">
                         </div>
                         <div class="collaboratorimg">
-                            <img class="nvidiaicon" src="assets/Frame 12.png">
+                            <img class="nvidiaicon" src="assets/Frame 18(2).png">
                         </div>
 
 
@@ -515,7 +525,7 @@
 
             <div class="custum-container">
 
-                <div class="products">
+                <div id="gogolai" class="products">
 
                     <div class="productdesc">
 
@@ -555,12 +565,12 @@
 
                 </div>
 
-                <div class="products card1">
+                <div id="edisonai" class="products card1 red" id="gogolai">
 
                     <div class="productdesc">
 
-                        <p class="initialp">gogol ai - writing employee</p>
-                        <h3 class="producth3">Gogol AI</h3>
+                        <p class="initialp">Edison ai - product manager employee</p>
+                        <h3 class="producth3">Edison AI</h3>
                         <p class="productp">
                             Named after Nikolai Gogol, this is the primary focus of Olympus AI's initial
                             development. Gogol AI is an advanced writing and content creation orchestrator that
@@ -589,18 +599,18 @@
 
                     <div class="productimg">
 
-                        <img src="assets/productimg.png" alt="productimg" />
+                        <img src="assets/Frame 10180 (1).png" alt="productimg" />
 
                     </div>
 
                 </div>
 
-                <div class="products card2">
+                <div id="steveai" class="products card2 green">
 
                     <div class="productdesc">
 
-                        <p class="initialp">gogol ai - writing employee</p>
-                        <h3 class="producth3">Gogol AI</h3>
+                        <p class="initialp">Steve ai - Marketing expert employee</p>
+                        <h3 class="producth3">Steve AI</h3>
                         <p class="productp">
                             Named after Nikolai Gogol, this is the primary focus of Olympus AI's initial
                             development. Gogol AI is an advanced writing and content creation orchestrator that
@@ -629,18 +639,18 @@
 
                     <div class="productimg">
 
-                        <img src="assets/productimg.png" alt="productimg" />
+                        <img src="assets/Frame 10180 (2).png" alt="productimg" />
 
                     </div>
 
                 </div>
 
-                <div class="products card3">
+                <div id="brandonai" class="products card3 purple">
 
                     <div class="productdesc">
 
-                        <p class="initialp">gogol ai - writing employee</p>
-                        <h3 class="producth3">Gogol AI</h3>
+                        <p class="initialp">brandon ai - customer support employee</p>
+                        <h3 class="producth3">Brandon AI</h3>
                         <p class="productp">
                             Named after Nikolai Gogol, this is the primary focus of Olympus AI's initial
                             development. Gogol AI is an advanced writing and content creation orchestrator that
@@ -669,18 +679,18 @@
 
                     <div class="productimg">
 
-                        <img src="assets/productimg.png" alt="productimg" />
+                        <img src="assets/Frame 10180 (3).png" alt="productimg" />
 
                     </div>
 
                 </div>
 
-                <div class="products card4">
+                <div id="taylorai" class="products card4 orange">
 
                     <div class="productdesc">
 
-                        <p class="initialp">gogol ai - writing employee</p>
-                        <h3 class="producth3">Gogol AI</h3>
+                        <p class="initialp">taylor ai - financial analysis employee</p>
+                        <h3 class="producth3">Taylor AI</h3>
                         <p class="productp">
                             Named after Nikolai Gogol, this is the primary focus of Olympus AI's initial
                             development. Gogol AI is an advanced writing and content creation orchestrator that
@@ -709,7 +719,7 @@
 
                     <div class="productimg">
 
-                        <img src="assets/productimg.png" alt="productimg" />
+                        <img src="assets/Frame 10180 (4).png" alt="productimg" />
 
                     </div>
 
@@ -765,64 +775,6 @@
                                     the need to juggle various tools for different tasks.</p>
 
                             </div>
-  <div class="usecasecard">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                    fill="none">
-                                    <path
-                                        d="M33.9798 27.6092C34.3811 26.7969 35.5395 26.7969 35.9409 27.6092L36.4837 28.7077C37.4049 30.5719 38.7393 32.2014 40.3852 33.4723L41.4954 34.3295C42.0624 34.7673 42.0624 35.6231 41.4954 36.0609L40.3852 36.9181C38.7393 38.189 37.4049 39.8185 36.4837 41.6827L35.9409 42.7812C35.5395 43.5934 34.3811 43.5934 33.9798 42.7812L33.437 41.6827C32.5158 39.8185 31.1814 38.189 29.5355 36.9181L28.4253 36.0609C27.8582 35.6231 27.8582 34.7673 28.4253 34.3295L29.5355 33.4723C31.1814 32.2014 32.5158 30.5719 33.437 28.7077L33.9798 27.6092Z"
-                                        stroke="black" stroke-width="2" stroke-linejoin="round" />
-                                    <circle cx="35.0001" cy="35.0001" r="25.8333" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M19 59C20.6569 59 22 57.6569 22 56C22 54.3431 20.6569 53 19 53C17.3431 53 16 54.3431 16 56C16 57.6569 17.3431 59 19 59Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M15 21C16.1046 21 17 20.1046 17 19C17 17.8954 16.1046 17 15 17C13.8954 17 13 17.8954 13 19C13 20.1046 13.8954 21 15 21Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M57 51C58.1046 51 59 50.1046 59 49C59 47.8954 58.1046 47 57 47C55.8954 47 55 47.8954 55 49C55 50.1046 55.8954 51 57 51Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M53 21C55.2091 21 57 19.2091 57 17C57 14.7909 55.2091 13 53 13C50.7909 13 49 14.7909 49 17C49 19.2091 50.7909 21 53 21Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                </svg>
-
-                                <h3 class="usecasescardh3">Unified AI Ecosystem</h3>
-                                <p class="usecasescardp">Access multiple specialized AI employees in one platform,
-                                    eliminating
-                                    the need to juggle various tools for different tasks.</p>
-
-                            </div>
-
-                              <div class="usecasecard">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                    fill="none">
-                                    <path
-                                        d="M33.9798 27.6092C34.3811 26.7969 35.5395 26.7969 35.9409 27.6092L36.4837 28.7077C37.4049 30.5719 38.7393 32.2014 40.3852 33.4723L41.4954 34.3295C42.0624 34.7673 42.0624 35.6231 41.4954 36.0609L40.3852 36.9181C38.7393 38.189 37.4049 39.8185 36.4837 41.6827L35.9409 42.7812C35.5395 43.5934 34.3811 43.5934 33.9798 42.7812L33.437 41.6827C32.5158 39.8185 31.1814 38.189 29.5355 36.9181L28.4253 36.0609C27.8582 35.6231 27.8582 34.7673 28.4253 34.3295L29.5355 33.4723C31.1814 32.2014 32.5158 30.5719 33.437 28.7077L33.9798 27.6092Z"
-                                        stroke="black" stroke-width="2" stroke-linejoin="round" />
-                                    <circle cx="35.0001" cy="35.0001" r="25.8333" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M19 59C20.6569 59 22 57.6569 22 56C22 54.3431 20.6569 53 19 53C17.3431 53 16 54.3431 16 56C16 57.6569 17.3431 59 19 59Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M15 21C16.1046 21 17 20.1046 17 19C17 17.8954 16.1046 17 15 17C13.8954 17 13 17.8954 13 19C13 20.1046 13.8954 21 15 21Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M57 51C58.1046 51 59 50.1046 59 49C59 47.8954 58.1046 47 57 47C55.8954 47 55 47.8954 55 49C55 50.1046 55.8954 51 57 51Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                    <path
-                                        d="M53 21C55.2091 21 57 19.2091 57 17C57 14.7909 55.2091 13 53 13C50.7909 13 49 14.7909 49 17C49 19.2091 50.7909 21 53 21Z"
-                                        fill="white" stroke="black" stroke-width="2" />
-                                </svg>
-
-                                <h3 class="usecasescardh3">Unified AI Ecosystem</h3>
-                                <p class="usecasescardp">Access multiple specialized AI employees in one platform,
-                                    eliminating
-                                    the need to juggle various tools for different tasks.</p>
-
-                            </div>
-
                             <div class="usecasecard">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
@@ -939,7 +891,65 @@
 
                             </div>
 
+                            <div class="usecasecard">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                    fill="none">
+                                    <path
+                                        d="M33.9798 27.6092C34.3811 26.7969 35.5395 26.7969 35.9409 27.6092L36.4837 28.7077C37.4049 30.5719 38.7393 32.2014 40.3852 33.4723L41.4954 34.3295C42.0624 34.7673 42.0624 35.6231 41.4954 36.0609L40.3852 36.9181C38.7393 38.189 37.4049 39.8185 36.4837 41.6827L35.9409 42.7812C35.5395 43.5934 34.3811 43.5934 33.9798 42.7812L33.437 41.6827C32.5158 39.8185 31.1814 38.189 29.5355 36.9181L28.4253 36.0609C27.8582 35.6231 27.8582 34.7673 28.4253 34.3295L29.5355 33.4723C31.1814 32.2014 32.5158 30.5719 33.437 28.7077L33.9798 27.6092Z"
+                                        stroke="black" stroke-width="2" stroke-linejoin="round" />
+                                    <circle cx="35.0001" cy="35.0001" r="25.8333" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M19 59C20.6569 59 22 57.6569 22 56C22 54.3431 20.6569 53 19 53C17.3431 53 16 54.3431 16 56C16 57.6569 17.3431 59 19 59Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M15 21C16.1046 21 17 20.1046 17 19C17 17.8954 16.1046 17 15 17C13.8954 17 13 17.8954 13 19C13 20.1046 13.8954 21 15 21Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M57 51C58.1046 51 59 50.1046 59 49C59 47.8954 58.1046 47 57 47C55.8954 47 55 47.8954 55 49C55 50.1046 55.8954 51 57 51Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M53 21C55.2091 21 57 19.2091 57 17C57 14.7909 55.2091 13 53 13C50.7909 13 49 14.7909 49 17C49 19.2091 50.7909 21 53 21Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                </svg>
+
+                                <h3 class="usecasescardh3">Unified AI Ecosystem</h3>
+                                <p class="usecasescardp">Access multiple specialized AI employees in one platform,
+                                    eliminating
+                                    the need to juggle various tools for different tasks.</p>
+
+                            </div>
+
+                            <div class="usecasecard">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                    fill="none">
+                                    <path
+                                        d="M33.9798 27.6092C34.3811 26.7969 35.5395 26.7969 35.9409 27.6092L36.4837 28.7077C37.4049 30.5719 38.7393 32.2014 40.3852 33.4723L41.4954 34.3295C42.0624 34.7673 42.0624 35.6231 41.4954 36.0609L40.3852 36.9181C38.7393 38.189 37.4049 39.8185 36.4837 41.6827L35.9409 42.7812C35.5395 43.5934 34.3811 43.5934 33.9798 42.7812L33.437 41.6827C32.5158 39.8185 31.1814 38.189 29.5355 36.9181L28.4253 36.0609C27.8582 35.6231 27.8582 34.7673 28.4253 34.3295L29.5355 33.4723C31.1814 32.2014 32.5158 30.5719 33.437 28.7077L33.9798 27.6092Z"
+                                        stroke="black" stroke-width="2" stroke-linejoin="round" />
+                                    <circle cx="35.0001" cy="35.0001" r="25.8333" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M19 59C20.6569 59 22 57.6569 22 56C22 54.3431 20.6569 53 19 53C17.3431 53 16 54.3431 16 56C16 57.6569 17.3431 59 19 59Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M15 21C16.1046 21 17 20.1046 17 19C17 17.8954 16.1046 17 15 17C13.8954 17 13 17.8954 13 19C13 20.1046 13.8954 21 15 21Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M57 51C58.1046 51 59 50.1046 59 49C59 47.8954 58.1046 47 57 47C55.8954 47 55 47.8954 55 49C55 50.1046 55.8954 51 57 51Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M53 21C55.2091 21 57 19.2091 57 17C57 14.7909 55.2091 13 53 13C50.7909 13 49 14.7909 49 17C49 19.2091 50.7909 21 53 21Z"
+                                        fill="white" stroke="black" stroke-width="2" />
+                                </svg>
+
+                                <h3 class="usecasescardh3">Unified AI Ecosystem</h3>
+                                <p class="usecasescardp">Access multiple specialized AI employees in one platform,
+                                    eliminating
+                                    the need to juggle various tools for different tasks.</p>
+
+                            </div>
                         </div>
+
                     </div>
 
 
@@ -951,7 +961,300 @@
 
         </section>
 
+        <section id="coin">
+
+            <div class="custum-container">
+
+                <div class="coin">
+                    <div class="coinheading">
+                        <p class="olympusp">olympus ai coin</p>
+                        <h3 class="coinh3">$OAI Coin</h3>
+                        <p class="coinp">
+                            The OAI token is the backbone of the Olympus AI ecosystem, powering a wide range of platform
+                            interactions and incentives. As a native utility token, OAI facilitates seamless access to
+                            Olympus AI's suite of specialized AI agents and services.
+                            <span class="coinspan">
+                                By holding OAI tokens, users can stake for rewards and receive discounts on AI services.
+                                The token plays a crucial role in aligning the interests of users, developers, and the
+                                platform itself. With a deflationary mechanism and a well-structured tokenomics model,
+                                OAI is designed to create long-term value for holders while fostering a thriving,
+                                self-sustaining ecosystem within the Olympus AI platform.
+                            </span>
+                        </p>
+
+                        <button class="coinbttn">EXPLORE <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.1984 9.27765L3 9.27765L3 7.72216L10.1984 7.72216L10.1984 5L15 8.5L10.1984 12L10.1984 9.27765Z"
+                                    fill="#2C83F6" />
+                            </svg></button>
+
+                    </div>
+
+                    <div class="coinimg">
+
+                        <img src="assets/Coin - Copy@1-550x550 1.png" alt="coinimg" />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="faqs">
+
+            <div class="custum-container">
+
+                <div class="faqsmain">
+
+                    <div class="faqsheading">
+
+                        <p class="olympusp">faqs</p>
+                        <h3 class="faqsh3">Expect Answers to Your Most Common Questions</h3>
+                        <p class="faqsheadingp">Find answers to the most common questions and get insight into our
+                            service, processes, and policies to help you make informed decisions</p>
+
+                    </div>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span>Q1.</span>
+                                    <p>What is Olympus AI</p>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="faqsheadingp">Olympus AI is a unified platform offering specialized AI
+                                        "employees" that autonomously handle diverse business tasks, from content
+                                        creation and marketing to cutomer support and trading. Our platform streamlines
+                                        operations by integrating AI-driven solutions and real-world task execution</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span>Q2.</span>
+                                    <p>How does Olympus AI differ from other AI platforms</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>It is more secure, more safe and a variety of products are available rather than
+                                        just one</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span>Q3.</span>
+                                    <p>What are AI "employees"?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span>Q4.</span>
+                                    <p>How do AI employees perform real-world tasks?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span>Q5. </span>
+                                    <p>What is the OAI token, how is it used?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <span>Q6. </span>
+                                    <p>How can I earn rewards on Olympus AI?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <span>Q7. </span>
+                                    <p>What industries can benifit from Olympus AI?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <span>Q8.</span>
+                                    <p>How secure is Olympus AI platform</p>
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="lastsectoin">
+
+            <div class="custum-container">
+
+                <div class="lastsection">
+
+                    <div class="lastsectionheading">
+                        <div>
+                            <h2 class="lastsectionh2">One Platform.</h2>
+                            <h2 class="lastsectionh2">Endless AI Power.</h2>
+                        </div>
+                        <p class="lastsectionp">Step into the future of business with Olympus AI, where specialized AI
+                            employees seamlessly collaborate to solve your most complex challenges. Discover
+                            unparalleled efficiency, innovation, and automation—all in one powerful, unified platform.
+                        </p>
+                        <button class="lastsectionbttn">GET STARTED <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.1984 9.27765L3 9.27765L3 7.72216L10.1984 7.72216L10.1984 5L15 8.5L10.1984 12L10.1984 9.27765Z"
+                                    fill="#2C83F6" />
+                            </svg></button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="custum-container">
+
+                <div class="footer">
+
+                    <div class="footerheading">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="156" height="23" viewBox="0 0 156 23"
+                            fill="none">
+                            <path
+                                d="M13.4066 6.27434C13.4245 6.25755 13.4421 6.24044 13.4595 6.22302L17.9082 1.77433L20.2389 4.10503L15.7902 8.55371C13.5447 10.7992 9.90409 10.7992 7.65862 8.55371L3.20994 4.10502L5.54064 1.77433L9.98932 6.22302C10.0287 6.26244 10.0692 6.30025 10.1105 6.33643V0H13.4066V6.27434Z"
+                                fill="#2C83F6" />
+                            <path
+                                d="M7.84972 15.8949C7.83906 15.9488 7.82654 16.0027 7.8121 16.0566L6.18377 22.1336L9.36755 22.9867L10.9959 16.9097C11.8178 13.8423 9.99748 10.6894 6.93011 9.86752L0.853093 8.23919L0 11.423L6.07702 13.0513C6.10081 13.0577 6.12443 13.0644 6.14787 13.0714L0.714175 16.2086L2.36222 19.0631L7.84972 15.8949Z"
+                                fill="#2C83F6" />
+                            <path
+                                d="M17.2933 13.1129C17.3453 13.0952 17.3983 13.0791 17.4521 13.0646L23.5292 11.4363L22.6761 8.25252L16.5991 9.88085C13.5317 10.7027 11.7114 13.8556 12.5333 16.923L14.1616 23L17.3454 22.1469L15.7171 16.0699C15.7107 16.0461 15.7047 16.0223 15.699 15.9985L21.1328 19.1356L22.7808 16.2811L17.2933 13.1129Z"
+                                fill="#2C83F6" />
+                            <path
+                                d="M37.5404 17.4069H37.0788C36.0786 17.4069 35.2515 17.3813 34.5975 17.33C33.9436 17.2787 33.3537 17.1761 32.828 17.0222C32.315 16.8555 31.9111 16.6568 31.6162 16.426C31.3341 16.1823 31.0968 15.8489 30.9045 15.4258C30.7122 14.9898 30.5839 14.5153 30.5198 14.0024C30.4685 13.4766 30.4429 12.8098 30.4429 12.002V11.6942C30.4429 10.8864 30.4685 10.2196 30.5198 9.69383C30.5839 9.16809 30.7122 8.69363 30.9045 8.27047C31.0968 7.83449 31.3341 7.50109 31.6162 7.27027C31.8983 7.02663 32.3022 6.82788 32.828 6.674C33.3537 6.52012 33.9436 6.41754 34.5975 6.36625C35.2515 6.31495 36.0786 6.28931 37.0788 6.28931H37.5404C38.5406 6.28931 39.3677 6.31495 40.0217 6.36625C40.6757 6.41754 41.2655 6.52012 41.7913 6.674C42.317 6.82788 42.721 7.02663 43.0031 7.27027C43.2852 7.50109 43.5224 7.83449 43.7148 8.27047C43.9071 8.69363 44.0289 9.16809 44.0802 9.69383C44.1443 10.2196 44.1764 10.8864 44.1764 11.6942V12.002C44.1764 12.8098 44.1443 13.4766 44.0802 14.0024C44.0289 14.5153 43.9071 14.9898 43.7148 15.4258C43.5224 15.8489 43.2788 16.1823 42.9838 16.426C42.7017 16.6568 42.2978 16.8555 41.7721 17.0222C41.2591 17.1761 40.6757 17.2787 40.0217 17.33C39.3677 17.3813 38.5406 17.4069 37.5404 17.4069ZM37.1173 16.1759H37.502C38.3355 16.1759 39.0023 16.1631 39.5024 16.1374C40.0153 16.099 40.4833 16.022 40.9065 15.9066C41.3425 15.7912 41.6567 15.6502 41.849 15.4835C42.0542 15.3168 42.2273 15.0603 42.3683 14.7141C42.5222 14.355 42.612 13.9767 42.6376 13.5792C42.6761 13.1689 42.6953 12.6239 42.6953 11.9443V11.7519C42.6953 11.0595 42.6761 10.5145 42.6376 10.117C42.612 9.70666 42.5222 9.32838 42.3683 8.98215C42.2273 8.62311 42.0542 8.36023 41.849 8.19353C41.6567 8.02683 41.3425 7.88578 40.9065 7.77037C40.4833 7.64214 40.0217 7.5652 39.5216 7.53956C39.0215 7.51391 38.3483 7.50109 37.502 7.50109H37.1173C36.271 7.50109 35.5977 7.51391 35.0976 7.53956C34.5975 7.5652 34.1295 7.64214 33.6935 7.77037C33.2704 7.88578 32.9562 8.02683 32.751 8.19353C32.5587 8.36023 32.3856 8.62311 32.2317 8.98215C32.0906 9.32838 32.0009 9.70666 31.9624 10.117C31.9368 10.5145 31.9239 11.0595 31.9239 11.7519V11.9443C31.9239 12.6239 31.9368 13.1689 31.9624 13.5792C32.0009 13.9767 32.0906 14.355 32.2317 14.7141C32.3856 15.0603 32.5587 15.3168 32.751 15.4835C32.9562 15.6502 33.2704 15.7912 33.6935 15.9066C34.1295 16.022 34.5975 16.099 35.0976 16.1374C35.6106 16.1631 36.2838 16.1759 37.1173 16.1759Z"
+                                fill="black" />
+                            <path d="M56.4147 16.0413V17.2723H46.5474V6.42395H48.0092V16.0413H56.4147Z" fill="black" />
+                            <path
+                                d="M64.3547 13.1753V17.2723H62.8929V13.1753L56.6609 6.42395H58.5074L63.6623 12.0405H63.7007L68.7979 6.42395H70.6252L64.3547 13.1753Z"
+                                fill="black" />
+                            <path
+                                d="M88.5984 6.42395V17.2723H87.1558V7.71267H87.1174L80.9431 17.2723H79.7313L73.5185 7.71267H73.4608V17.2723H72.0182V6.42395H74.3264L80.3468 15.7335H80.4045L86.348 6.42395H88.5984Z"
+                                fill="black" />
+                            <path
+                                d="M92.7146 12.0597H98.0042C98.9402 12.0597 99.6391 12.0405 100.101 12.002C100.575 11.9635 100.953 11.8609 101.236 11.6942C101.518 11.5147 101.684 11.3095 101.736 11.0787C101.8 10.8351 101.832 10.4568 101.832 9.94388V9.71307C101.832 9.30273 101.806 8.98856 101.755 8.77057C101.716 8.55258 101.633 8.35382 101.505 8.1743C101.389 7.99478 101.178 7.87296 100.87 7.80884C100.562 7.7319 100.197 7.68061 99.7738 7.65497C99.3506 7.6165 98.7607 7.59726 98.0042 7.59726H92.7146V12.0597ZM92.7146 13.2715V17.2723H91.2528V6.42395H98.2927C99.4083 6.42395 100.261 6.46242 100.851 6.53936C101.454 6.60347 101.954 6.76376 102.351 7.02022C102.749 7.26386 103.005 7.59085 103.121 8.00119C103.236 8.3987 103.294 8.96933 103.294 9.71307V9.94388C103.294 11.3544 102.98 12.2649 102.351 12.6752C101.736 13.0727 100.383 13.2715 98.2927 13.2715H92.7146Z"
+                                fill="black" />
+                            <path
+                                d="M111.708 17.4069H111.381C110.291 17.4069 109.4 17.3684 108.708 17.2915C108.028 17.2146 107.445 17.0992 106.957 16.9453C106.483 16.7914 106.124 16.5478 105.88 16.2144C105.649 15.881 105.483 15.5027 105.38 15.0795C105.29 14.6564 105.245 14.105 105.245 13.4254V6.42395H106.707V13.1753C106.707 13.8677 106.752 14.3935 106.842 14.7525C106.932 15.0988 107.15 15.3937 107.496 15.6373C107.842 15.8681 108.297 16.0156 108.862 16.0797C109.426 16.1438 110.246 16.1759 111.324 16.1759H111.766C112.638 16.1759 113.33 16.1567 113.843 16.1182C114.356 16.0669 114.799 15.99 115.17 15.8874C115.555 15.772 115.831 15.5925 115.998 15.3488C116.164 15.1052 116.28 14.8231 116.344 14.5025C116.421 14.1691 116.459 13.7267 116.459 13.1753V6.42395H117.921V13.4254C117.921 14.2845 117.85 14.9513 117.709 15.4258C117.568 15.9002 117.261 16.2977 116.786 16.6183C116.325 16.9389 115.703 17.1505 114.92 17.253C114.151 17.3556 113.08 17.4069 111.708 17.4069Z"
+                                fill="black" />
+                            <path
+                                d="M132.386 14.1178V14.2909C132.386 15.1757 132.232 15.8297 131.924 16.2528C131.629 16.676 131.103 16.9773 130.347 17.1569C129.59 17.3236 128.43 17.4069 126.865 17.4069H126.365C125.391 17.4069 124.596 17.3941 123.98 17.3684C123.378 17.3428 122.833 17.2787 122.345 17.1761C121.871 17.0735 121.505 16.9581 121.249 16.8299C121.005 16.7016 120.806 16.5029 120.653 16.2336C120.499 15.9643 120.403 15.6822 120.364 15.3873C120.326 15.0795 120.306 14.6756 120.306 14.1755V13.887H121.768V14.137C121.768 14.5474 121.794 14.8615 121.845 15.0795C121.909 15.2975 122.012 15.4963 122.153 15.6758C122.294 15.8425 122.55 15.9579 122.922 16.022C123.307 16.0861 123.743 16.1374 124.23 16.1759C124.718 16.2015 125.404 16.2144 126.288 16.2144H126.75C128.532 16.2144 129.674 16.099 130.174 15.8681C130.674 15.6373 130.924 15.118 130.924 14.3101V14.1563C130.924 13.6305 130.828 13.2522 130.635 13.0214C130.443 12.7906 130.033 12.6239 129.404 12.5213C128.789 12.4059 127.789 12.3482 126.404 12.3482C124.621 12.3482 123.32 12.2585 122.499 12.0789C121.691 11.8994 121.166 11.6237 120.922 11.2518C120.678 10.8671 120.556 10.2452 120.556 9.38608V9.21297C120.556 8.04607 120.903 7.27027 121.595 6.88558C122.288 6.48806 123.692 6.28931 125.808 6.28931H126.25C127.301 6.28931 128.154 6.32136 128.808 6.38548C129.462 6.43677 130.013 6.52653 130.462 6.65476C130.911 6.78299 131.238 6.98175 131.443 7.25104C131.661 7.5075 131.809 7.80243 131.886 8.13583C131.975 8.45641 132.02 8.89239 132.02 9.44378V9.71307H130.578V9.52072C130.578 8.90521 130.482 8.46282 130.289 8.19353C130.11 7.92425 129.738 7.73831 129.174 7.63573C128.622 7.52032 127.712 7.46262 126.442 7.46262H126.077C124.859 7.46262 123.974 7.51391 123.422 7.6165C122.871 7.70626 122.499 7.86655 122.307 8.09736C122.114 8.32818 122.018 8.70005 122.018 9.21297V9.36685C122.018 9.89259 122.095 10.2645 122.249 10.4825C122.416 10.6876 122.813 10.8479 123.442 10.9633C124.07 11.0659 125.102 11.1172 126.538 11.1172C128.257 11.1172 129.52 11.207 130.328 11.3865C131.148 11.566 131.693 11.8545 131.963 12.252C132.245 12.6496 132.386 13.2715 132.386 14.1178Z"
+                                fill="black" />
+                            <path
+                                d="M146.301 6.42395L152.379 17.2723H150.783L149.475 14.8872H141.031L139.703 17.2723H138.126L144.397 6.42395H146.301ZM141.665 13.7908H148.878L145.416 7.48185H145.262L141.665 13.7908Z"
+                                fill="black" />
+                            <path d="M155.227 6.42395V17.2723H153.765V6.42395H155.227Z" fill="black" />
+                        </svg>
+
+                        <div>
+                            <p class="footerp">©2024 Olympus AI. All rights reserved.</p>
+                            <p class="footerp2">Terms | Privacy</p>
+                        </div>
+
+                    </div>
+
+                    <div class="footerlistprnt">
+
+                        <ul class="footerlist">
+
+                            <li>
+                                <h5>PRODUCTS</h5>
+                            </li>
+                            <li><a href="#gogolai">Gogol AI</a></li>
+                            <li><a href="#edisonai">Edison AI</a></li>
+                            <li><a href="#steveai">Steve AI</a></li>
+                            <li><a href="#bransonai">Branson AI</a></li>
+                            <li><a href="#taylorai">Taylor AI</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <div class="maria">
+            <p>I love your </p>
+            <p>boobs</p>
+        </div>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
 </body>
 
